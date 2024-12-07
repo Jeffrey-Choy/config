@@ -1,0 +1,29 @@
+set scrolloff=10
+
+set incsearch
+let mapleader = " "
+map Q gq
+
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+Plug 'michaeljsmith/vim-indent-object'
+
+nnoremap <Leader>y "+y
+vnoremap <Leader>y "+y
+nnoremap <Leader>Y "+Y
+
+set clipboard+=ideaput
+xnoremap p pgvy
+
+map \b [(<Action>(GotoDeclaration)
+
+set relativenumber
+set number
+nnoremap <c-z> :action ToggleDistractionFreeMode<CR>
+nnoremap <C-\> :vsplit<CR>
+nnoremap <C--> :split<CR>
+foldopen-=block
+set ignorecase
+set smartcase
+set hlsearch
+
